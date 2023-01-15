@@ -36,14 +36,11 @@ class HomeFragment: Fragment() {
             val title = jsonObject.getJSONObject("title")
             val text = title.getString("text")
             val iconUrl = title.getString("icon_url")
-            val titleValue = Title(text,iconUrl)
 
-            Log.d("testt", "image : ${titleValue.iconUrl}")
-            toolbarTitle.text = titleValue.text
+            toolbarTitle.text = text
             Glide.with(this)
-                .load(titleValue.iconUrl)
+                .load(iconUrl)
                 .into(toolbarIcon)
-
         }
 
     }
