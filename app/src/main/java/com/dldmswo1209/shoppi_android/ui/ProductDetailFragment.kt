@@ -1,10 +1,11 @@
-package com.dldmswo1209.shoppi_android
+package com.dldmswo1209.shoppi_android.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.dldmswo1209.shoppi_android.R
 
 class ProductDetailFragment: Fragment() {
 

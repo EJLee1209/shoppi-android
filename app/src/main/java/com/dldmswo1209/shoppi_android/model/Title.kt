@@ -1,4 +1,4 @@
-package com.dldmswo1209.shoppi_android
+package com.dldmswo1209.shoppi_android.model
 
 import com.google.gson.annotations.SerializedName
 

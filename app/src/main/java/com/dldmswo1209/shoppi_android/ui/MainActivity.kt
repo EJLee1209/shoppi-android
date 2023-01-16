@@ -1,10 +1,10 @@
-package com.dldmswo1209.shoppi_android
+package com.dldmswo1209.shoppi_android.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.dldmswo1209.shoppi_android.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

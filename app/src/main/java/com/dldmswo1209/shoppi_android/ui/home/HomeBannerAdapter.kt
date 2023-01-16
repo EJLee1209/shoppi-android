@@ -1,8 +1,7 @@
-package com.dldmswo1209.shoppi_android
+package com.dldmswo1209.shoppi_android.ui.home
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,10 +11,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.dldmswo1209.shoppi_android.model.Banner
+import com.dldmswo1209.shoppi_android.R
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
-class HomeBannerAdapter: ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(BannerDiffCallback()) {
+class HomeBannerAdapter: ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(
+    BannerDiffCallback()
+) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeBannerViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_home_banner, parent, false)
